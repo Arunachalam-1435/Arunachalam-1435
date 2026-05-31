@@ -15,3 +15,25 @@
 
 ## Contact me in
 <a href="https://www.linkedin.com/in/arunachalam1435/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> <a href="https://x.com/r0m3o_101"><img src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white" alt="X"></a>
+
+## Projects I did
+1. 🍯 HoneyTrap - A dual-protocol honeypot that emulates SSH and HTTP services to lure and log attacker activity.
+
+Fake SSH server built with Paramiko — emulates an Ubuntu shell, logs every credential attempt and command executed
+Fake HTTP login page built with Flask — captures IP addresses and submitted credentials
+Rotating file logs across three audit files: connection attempts, commands, and HTTP activity
+Fully Dockerized — runs both honeypots in parallel via a startup shell script, with log volume mounting for persistence
+
+2. 🔐 AuthLite - An intentionally vulnerable PHP authentication app — built to understand how auth systems work before attacking them.
+
+User registration and login with email and password
+Profile picture upload via JavaScript Fetch API
+Deliberately skips security best practices: no prepared statements, MD5 password hashing, no session regeneration, no server-side file validation
+Built to practice identifying SQLi, session fixation, and insecure file upload vulnerabilities in a controlled environment
+
+3. 🔌 REST API - A RESTful API built from scratch in plain PHP to understand backend fundamentals before using frameworks.
+
+Full CRUD operations on a products resource across 5 endpoints
+MVC architecture with manual routing, controller, and model layers
+Used MySQLi instead of the tutorial's PDO — understanding the difference between abstraction layers mattered more than following instructions
+Tested entirely with cURL
